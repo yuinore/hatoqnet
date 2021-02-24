@@ -6,9 +6,11 @@ html
     meta[name="viewport" content="width=640"]
     = csrf_meta_tags
     = csp_meta_tag
-    = stylesheet_link_tag 'application', media: 'all'
-    = javascript_pack_tag 'application'
     link[rel="preconnect" href="https://fonts.gstatic.com"]
     link[href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"]
+    link[rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"]
+    = stylesheet_link_tag 'application', media: 'all'
+    script[src="https://unpkg.com/swiper/swiper-bundle.min.js"]
+    = javascript_pack_tag 'application'
   body
     = yield

@@ -218,3 +218,36 @@ a:hover .hover1::before {
     left: 125%;
   }
 }
+
+/**************************************************************/
+/*******************         swiper         *******************/
+/**************************************************************/
+
+.swiper-container {
+  width: 480px;
+  height: 360px;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+}
+
+.gallery-top {
+}
+
+.gallery-thumbs {
+  height: 60px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 5%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}

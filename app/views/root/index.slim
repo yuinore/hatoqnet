@@ -1,6 +1,22 @@
 h1
   | hatoq.net
-| swiper here
+
+/ ---- swiper ----
+.swiper-container.gallery-top
+  .swiper-wrapper
+    - (1..6).each do |i|
+      .swiper-slide
+        img src="images/top_image_#{i}.png"
+  .swiper-pagination
+  .swiper-button-prev.swiper-button-white
+  .swiper-button-next.swiper-button-white
+  .swiper-scrollbar
+.swiper-container.gallery-thumbs
+  .swiper-wrapper
+    - (1..6).each do |i|
+      .swiper-slide
+        img src="images/top_thumb_#{i}.png"
+
 hr
 | イラストレーター、近代芸術家。現在、お仕事の受付は停止しております。
 - @top_links.each do |top_link|
@@ -19,3 +35,39 @@ hr
       span.hover1.circle6[style=style] &nbsp;
 hr
 .footer designed by hatoqne_dm
+
+javascript:
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    },
+    direction: 'horizontal',
+    loop: true,
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
