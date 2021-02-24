@@ -1,4 +1,4 @@
-font-face {
+@font-face {
     font-family: 'Koruri';
     src: url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot');
     src: url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot?#iefix') format('embedded-opentype');
@@ -36,9 +36,29 @@ a:active { color: #FFFFFF; }
 /*******************    header & footer     *******************/
 /**************************************************************/
 
-
 h1, .footer {
     font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  filter: drop-shadow(2px 2px 3px rgba(200,200,200,0.5));
+}
+
+.footer {
+  margin: auto auto 1em auto;
+}
+
+/**************************************************************/
+/*******************      dots border       *******************/
+/**************************************************************/
+
+hr {
+  border-width: 0 0 8px;
+  border-style: solid;
+  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"><circle fill="hsla(30, 100%, 65%, 1.0)" cx="1" cy="0.5" r="0.4"/></svg>') 0 0 100% repeat;
+   width: 520px;
+   margin: 20px auto;
+  filter: drop-shadow(2px 2px 3px rgba(218,142,65,0.5));
 }
 
 /**************************************************************/
@@ -57,9 +77,10 @@ h1, .footer {
   color: #FFFFFF;
   cursor: pointer;
   border-radius: 30px;
+  font-size: 24px;
   height: 60px;
+  width: 300px;
   line-height: 60px;
-  width: 260px;
   transition:
     transform 200ms 0s cubic-bezier(0.1, -1.0, 0.0, 1.3),
     opacity   200ms 0s linear;
