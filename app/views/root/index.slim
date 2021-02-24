@@ -5,14 +5,16 @@ hr
 - @top_links.each do |top_link|
   p
     = link_to top_link.link do
+      / do not use div, use span (Rails issue?)
+      / https://stackoverflow.com/questions/7187617/turn-a-div-into-a-link-in-rails
       - style = button_style(top_link)
-      div.hover1.circle1[style=style] &nbsp;
-      div.hover1.circle2[style=style] &nbsp;
-      div.hover1.circle3[style=style] &nbsp;
-      div.hover1[style=style]
+      span.hover1.circle1[style=style] &nbsp;
+      span.hover1.circle2[style=style] &nbsp;
+      span.hover1.circle3[style=style] &nbsp;
+      span.hover1[style=style]
         = top_link.name
-      div.hover1.circle4[style=style] &nbsp;
-      div.hover1.circle5[style=style] &nbsp;
-      div.hover1.circle6[style=style] &nbsp;
+      span.hover1.circle4[style=style] &nbsp;
+      span.hover1.circle5[style=style] &nbsp;
+      span.hover1.circle6[style=style] &nbsp;
 hr
 .footer designed by hatoqne_dm
