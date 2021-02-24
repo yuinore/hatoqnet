@@ -53,3 +53,4 @@ production:
   database: hatoqnet_production
   username: hatoqnet
   password: <%= ENV['HATOQNET_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
