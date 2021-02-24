@@ -56,7 +56,7 @@ hr {
   border-width: 0 0 8px;
   border-style: solid;
   border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"><circle fill="hsla(30, 100%, 65%, 1.0)" cx="1" cy="0.5" r="0.4"/></svg>') 0 0 100% repeat;
-   width: 520px;
+   width: 560px;
    margin: 20px auto;
   filter: drop-shadow(2px 2px 3px rgba(218,142,65,0.5));
 }
@@ -226,6 +226,7 @@ a:hover .hover1::before {
 .swiper-container {
   width: 480px;
   height: 360px;
+  filter: drop-shadow(3px 4px 3px rgba(120,120,120,0.5));
 }
 
 .swiper-slide {
@@ -255,4 +256,23 @@ a:hover .hover1::before {
 img.swiper-image {
   width: 100%;
   height: auto;
+}
+
+/**************************************************************/
+/*******************   back to top button   *******************/
+/**************************************************************/
+
+#page-top {
+  position: absolute;
+  top: 0px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 0px;
+}
+
+.back-to-top>img {
+  width: 90px;
 }
