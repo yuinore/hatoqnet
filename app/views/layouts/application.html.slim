@@ -1,16 +1,32 @@
 doctype html
 html
   head
+    meta[charset="UTF-8"]
+    meta[name="viewport" content="width=640"]
+
     title
       | hatoq.net
-    meta[name="viewport" content="width=640"]
     = csrf_meta_tags
     = csp_meta_tag
+
+    /! Twitter Card
+    meta[name="twitter:card" content="summary"]
+    meta[name="twitter:site" content="@hatoqne_dm"]
+    meta[name="twitter:title" content="はときゅねっと"]
+    meta[name="twitter:description" content="イラストレーター、近代芸術家。現在、お仕事の受付は停止しております。"]
+    meta[name="twitter:image" content="https://hatoq.net/images/twitter-card.png"]
+
     link[rel="preconnect" href="https://fonts.gstatic.com"]
     link[href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"]
     link[rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"]
     = stylesheet_link_tag 'application', media: 'all'
     script[src="https://unpkg.com/swiper/swiper-bundle.min.js"]
     = javascript_pack_tag 'application'
+
+    /! favicon
+    link[rel="icon" href="favicon.ico" sizes="32x32"]
+    link[rel="icon" href="favicon.ico" sizes="192x192"]
+    link[rel="apple-touch-icon-precomposed" href="favicon.ico"]
+    meta[name="msapplication-TileImage" content="favicon.ico"]
   body
     = yield
