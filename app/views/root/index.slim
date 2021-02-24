@@ -5,10 +5,14 @@ hr
 - @top_links.each do |top_link|
   p
     = link_to top_link.link do
-      = top_link.name
-    | ,
-    = top_link.color
-    | ,
-    = top_link.shadow_color
+      - style = button_style(top_link)
+      div.hover1.circle1[style=style] &nbsp;
+      div.hover1.circle2[style=style] &nbsp;
+      div.hover1.circle3[style=style] &nbsp;
+      div.hover1[style=style]
+        = top_link.name
+      div.hover1.circle4[style=style] &nbsp;
+      div.hover1.circle5[style=style] &nbsp;
+      div.hover1.circle6[style=style] &nbsp;
 hr
 .footer designed by hatoqne_dm
