@@ -1,0 +1,2 @@
+class TopLink < ApplicationRecord
+end
