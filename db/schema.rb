@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_24_162015) do
+ActiveRecord::Schema.define(version: 2021_02_24_165411) do
 
   create_table "top_links", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
+    t.string "link"
     t.string "color"
     t.string "shadow_color"
     t.datetime "created_at", precision: 6, null: false
