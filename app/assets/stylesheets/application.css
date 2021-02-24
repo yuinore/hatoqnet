@@ -237,7 +237,7 @@ a:hover .hover1::before {
 }
 
 .gallery-thumbs {
-  height: 60px;
+  height: 62px;
   box-sizing: border-box;
   padding: 10px 0;
 }
@@ -250,4 +250,9 @@ a:hover .hover1::before {
 
 .gallery-thumbs .swiper-slide-thumb-active {
   opacity: 1;
+}
+
+img.swiper-image {
+  width: 100%;
+  height: auto;
 }
