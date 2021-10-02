@@ -44,6 +44,10 @@ h1 {
   filter: drop-shadow(2px 2px 3px rgba(200,200,200,0.5));
 }
 
+.top_logo {
+  width: 500px;
+}
+
 .footer {
   margin: auto auto 1em auto;
 }
