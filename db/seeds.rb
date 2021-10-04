@@ -6,7 +6,7 @@ TopLink.create!(name: "pixivFANBOX", link: "https://hatoqne-dm.fanbox.cc",      
 TopLink.create!(name: "ニジエ",      link: "https://nijie.info/members.php?id=71502",                       color: "#FFC0D0", shadow_color: "#E1A9B8")
 TopLink.create!(name: "BOOTH",       link: "https://hatoqne.booth.pm",                                      color: "#FFB5AA", shadow_color: "#E1A096")
 TopLink.create!(name: "とらのあな",  link: "https://ec.toranoana.jp/tora_r/ec/cot/circle/2UPA216Q8X74dE60d687/all/", color: "#FDCC76", shadow_color: "#DFB468")
-TopLink.create!(name: "脱衣ブロック崩し", link: "https://hatoqne.x.fc2.com",                                color: "#C7EC91", shadow_color: "#B0D080")
+# TopLink.create!(name: "脱衣ブロック崩し", link: "https://hatoqne.x.fc2.com",                                color: "#C7EC91", shadow_color: "#B0D080")
 TopLink.create!(name: "DLsite",      link: "https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG44430.html", color: "#A1B7DF", shadow_color: "#8B9EBB")
 TopLink.create!(name: "Pawoo",       link: "https://pawoo.net/@hatoqne_dm",                                 color: "#AFACC8", shadow_color: "#9A98B0")
 TopLink.create!(name: "plurk",       link: "https://www.plurk.com/m/hatoqne_dm",                            color: "#F1A591", shadow_color: "#D59280")
