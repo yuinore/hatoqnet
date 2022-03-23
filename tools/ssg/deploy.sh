@@ -10,5 +10,6 @@ mv dist/* .
 rmdir dist
 git add .
 git commit -m 'Generate Static Site'
+git pull
 git push
 git checkout master
