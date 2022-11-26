@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'Koruri';
+    src: url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot');
+    src: url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot?#iefix') format('embedded-opentype');
+    src: url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff') format('woff'),
+         url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.ttf') format('truetype');
+
+    /*  for fuck'n chrome  */
+    src: url(https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff) format('woff');
+}
+
+body {
+    font-family: Koruri;
+    margin: 0;
+    padding: 0;
+
+    color: #8A8A8A;
+    text-align:center;
+    font-size: 18px;
+    line-height: 1.25em;
+
+    /* tile background */
+    background-color: #FFFFFF;
+    background-image:
+        linear-gradient(90deg, rgba(0,0,0,0.05) 10%, transparent 10%),
+        linear-gradient(rgba(0,0,0,0.05) 10%, transparent 10%);
+    background-size: 20px 20px;
+}
+
+a:link { color: #FFFFFF; }
+a:visited { color: #FFFFFF; }
+a:hover { color: #FFFFFF; }
+a:active { color: #FFFFFF; }
+
+/**************************************************************/
+/*******************    header & footer     *******************/
+/**************************************************************/
+
+h1, .footer {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  filter: drop-shadow(2px 2px 3px rgba(200,200,200,0.5));
+}
+
+.top_logo {
+  width: 500px;
+}
+
+.footer {
+  margin: auto auto 1em auto;
+}
+
+/**************************************************************/
+/*******************      dots border       *******************/
+/**************************************************************/
+
+hr {
+  border-width: 0 0 8px;
+  border-style: solid;
+  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"><circle fill="hsla(30, 100%, 65%, 1.0)" cx="1" cy="0.5" r="0.4"/></svg>') 0 0 100% repeat;
+   width: 560px;
+   margin: 20px auto;
+  filter: drop-shadow(2px 2px 3px rgba(218,142,65,0.5));
+}
+
+/**************************************************************/
+/*******************    colorful buttons    *******************/
+/**************************************************************/
+
+.hover1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0px 0px;
+  margin: 10px 15px;
+  background-color: #ADE7FF;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 24px;
+  height: 60px;
+  width: 300px;
+  line-height: 60px;
+  transition:
+    transform 200ms 0s cubic-bezier(0.1, -1.0, 0.0, 1.3),
+    opacity   200ms 0s linear;
+  filter: drop-shadow(3px 4px 3px rgba(155,207,228,0.5));
+  overflow: hidden;
+}
+
+.circle1 {
+  top: -10px;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  border-radius: 24px;
+  margin: 10px;
+  transition:
+    transform 200ms 20ms cubic-bezier(0.1, -1.0, 0.0, 1.3),
+    opacity   200ms 0s linear;
+}
+
+.circle2 {
+  top: 14px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 36px;
+  margin: 0px;
+  transition:
+    transform 200ms 80ms cubic-bezier(0.1, -1.0, 0.0, 1.3),
+    opacity   200ms 0s linear;
+}
+
+.circle3 {
+  top: -22px;
+  width: 8px;
+  height: 8px;
+  line-height: 8px;
+  border-radius: 16px;
+  margin: 0px;
+  transition:
+    transform 200ms 60ms cubic-bezier(0.1, -1.0, 0.0, 1.3),
+    opacity   200ms 0s linear;
+}
+
+.circle4 {
+  top: 22px;
+  width: 8px;
+  height: 8px;
+  line-height: 8px;
+  border-radius: 16px;
+  margin: 0px;
+  transition:
+    transform 200ms 120ms cubic-bezier(0.1, -1.0, 0.0, 1.3),
+    opacity   200ms 0s linear;
+}
+
+.circle5 {
+  top: -14px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 36px;
+  margin: 0px;
+  transition:
+    transform 200ms 40ms cubic-bezier(0.1, -1.0, 0.0, 1.3),
+    opacity   200ms 0s linear;
+}
+
+.circle6 {
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  border-radius: 24px;
+  margin: 10px;
+  transition:
+    transform 200ms 100ms cubic-bezier(0.1, -1.0, 0.0, 1.3),
+    opacity   200ms 0s linear;
+}
+
+a:hover .hover1 {
+  opacity: 0.6;
+  transform: scale(1.05, 1.05);
+}
+
+a:hover .circle1 {
+  opacity: 0.6;
+  transform: scale(1.1, 1.1);
+}
+
+a:hover .circle2 {
+  opacity: 0.6;
+  transform: scale(1.1, 1.1);
+}
+
+a:hover .circle3 {
+  opacity: 0.6;
+  transform: scale(1.3, 1.3);
+}
+
+a:hover .circle4 {
+  opacity: 0.6;
+  transform: scale(1.3, 1.3);
+}
+
+a:hover .circle5 {
+  opacity: 0.6;
+  transform: scale(1.1, 1.1);
+}
+
+a:hover .circle6 {
+  opacity: 0.6;
+  transform: scale(1.1, 1.1);
+}
+
+a .hover1::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  transform: skewX(-25deg);
+}
+
+a:hover .hover1::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/**************************************************************/
+/*******************         swiper         *******************/
+/**************************************************************/
+
+.swiper-container {
+  width: 480px;
+  height: 360px;
+  filter: drop-shadow(3px 4px 3px rgba(120,120,120,0.5));
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+}
+
+.gallery-top {
+}
+
+.gallery-thumbs {
+  height: 62px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 5%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+img.swiper-image {
+  width: 100%;
+  height: auto;
+}
+
+/**************************************************************/
+/*******************   back to top button   *******************/
+/**************************************************************/
+
+#page-top {
+  position: absolute;
+  top: 0px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 0px;
+}
+
+.back-to-top>img {
+  width: 90px;
+}
+
+/*# sourceMappingURL=application.css-64c3a9aaa656abef28550e373eb804f13cafe9e6ec8badaf56957951faa3eb7c.map */
