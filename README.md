@@ -1,24 +1,25 @@
-# README
+# hatoq.net
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+DEMO: https://hatoq.net/
 
-Things you may want to cover:
+## Run
 
-* Ruby version
+```bash
+bundle install
+bundle exec rake db:create
+bundle exec rake db:migrate
+bundle exec rake db:seed
+bundle exec rails s
+```
 
-* System dependencies
+## Deploy
 
-* Configuration
+```bash
+bundle exec rails s &
+tools/ssg/deploy.sh
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# terminate rails server
+jobs
+fg %1
+[Ctrl+C]
+```
