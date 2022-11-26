@@ -14,12 +14,8 @@ bundle exec rails s
 
 ## Deploy
 
-```bash
-bundle exec rails s &
-tools/ssg/deploy.sh
+Do not start a job during deploy. (executes `kill -15 $!`)
 
-# terminate rails server
-jobs
-fg %1
-[Ctrl+C]
+```bash
+./tools/ssg/deploy.sh
 ```
